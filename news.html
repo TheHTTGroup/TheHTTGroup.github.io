@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - The HTT Group</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">The Henderson Tharp Timmerman Group</div>
+            <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-content">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="staff.html">Our Staff</a></li>
+                    <li><a href="news.html" class="active">News</a></li>
+                    <li><a href="services.html">Services Offered</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <p class="breadcrumb"><a href="index.html">Home</a> / News</p>
+            <h1>Latest News</h1>
+        </div>
+    </section>
+
+    <section class="news-section">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <p class="section-label">SOCIALS & NEWS</p>
+                <h2 style="font-size: 2.5rem; color: #1a1a1a; font-weight: 700;">Latest Updates & Insights</h2>
+            </div>
+            <script type="text/javascript" src="https://www.juicer.io/embed/61576018780923/embed-code.js" async defer></script>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Follow us on Facebook to stay informed on the latest accounting, payroll, and small business insights.</p>
+            <a href="https://www.facebook.com/p/The-Henderson-Tharp-Timmerman-Group-LLC-61576018780923/" class="btn btn-primary">Follow</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>The Henderson Tharp Timmerman Group</h4>
+                    <p>Reliable. Experienced. Professional.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="staff.html">Our Team</a></li>
+                        <li><a href="news.html">Latest News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:tabitha@thehttgroup.com">tabitha@thehttgroup.com</a></p>
+                    <p>Phone: <a href="tel:+16419327567">(641) 932-7567</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 <a href="https://www.personsindustries.com/">Persons Industries LLC.</a> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            menu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        function updateNavText() {
+            const navBrand = document.querySelector('.nav-brand');
+            if (window.innerWidth <= 475) {
+            navBrand.textContent = "The HTT Group";
+            } else {
+            navBrand.textContent = "The Henderson Tharp Timmerman Group";
+            }
+        }
+
+        window.addEventListener('resize', updateNavText);
+        window.addEventListener('load', updateNavText);
+    </script>
+</body>
+</html>
