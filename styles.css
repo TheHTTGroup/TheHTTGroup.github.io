@@ -195,7 +195,7 @@ body {
 /* Carousel dots */
 .carousel-dots {
     position: absolute;
-    bottom: 2em;
+    bottom: 1.8em;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
