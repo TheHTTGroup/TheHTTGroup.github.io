@@ -17,6 +17,10 @@ body {
     padding: 0 15px;
 }
 
+.news-container {
+    max-width: 90vw;
+}
+
 /* Navigation */
 .navbar {
     background-color: #ffffff;
