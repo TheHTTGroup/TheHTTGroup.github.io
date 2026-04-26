@@ -3,12 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - The HTT Group</title>
+    <title>Services | HTT Group | Iowa Accounting</title>
+    <meta name="description" content="HTT Group provides comprehensive tax preparation, payroll processing, and bookkeeping services for individuals, farms, small businesses, and corporations in Iowa.">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "provider": {
+                "@type": "AccountingService",
+                "name": "The Henderson Tharp Timmerman Group",
+                "url": "https://thehttgroup.com"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Accounting & Financial Services",
+                "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                    "@type": "Service",
+                    "name": "Tax Preparation and Services",
+                    "description": "Individual, farm, small business, corporate, and multi-state tax preparation including e-filing, extensions, and amended returns."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                    "@type": "Service",
+                    "name": "Payroll Services",
+                    "description": "Full-service payroll processing including direct deposit, tax withholding, W-2/W-3 preparation, and 401K plans."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                    "@type": "Service",
+                    "name": "Bookkeeping & Accounting Services",
+                    "description": "Comprehensive bookkeeping including profit & loss, balance sheet preparation, and custom financial reporting."
+                    }
+                }
+                ]
+            }
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar">
